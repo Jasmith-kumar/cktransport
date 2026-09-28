@@ -1,0 +1,6 @@
+{
+  "name": "CK Transports - Nationwide Freight & Logistics",
+  "description": "CK Transports provides dependable, efficient, and professional freight transportation solutions across the United States. FTL, LTL, regional, and expedited commercial freight.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

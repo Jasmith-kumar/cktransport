@@ -1,0 +1,177 @@
+'use client';
+
+import React from 'react';
+import {
+  FileText,
+  Phone,
+  Mail,
+  MapPin,
+  Clock,
+  CheckCircle2,
+  Truck,
+  ArrowRight,
+  ShieldCheck,
+} from 'lucide-react';
+
+export default function QuoteCalculator() {
+  const quoteChecklist = [
+    {
+      title: 'Contact Details',
+      details: 'Full Name, Company Name, Direct Telephone & Business Email',
+    },
+    {
+      title: 'Pickup Location',
+      details: 'Origin City, State & Zip Code (or Shipper Facility Address)',
+    },
+    {
+      title: 'Delivery Location',
+      details: 'Destination City, State & Zip Code (or Receiver Warehouse)',
+    },
+    {
+      title: 'Freight Category',
+      details: 'Full Truckload (FTL), Less Than Truckload (LTL), Regional, Expedited, or Commercial',
+    },
+    {
+      title: 'Weight & Pallet Count',
+      details: 'Approximate Total Weight (lbs), Number of Pallets, Cargo Dimensions',
+    },
+    {
+      title: 'Target Schedule',
+      details: 'Desired Pickup Date & Receiving Appointment Window',
+    },
+    {
+      title: 'Special Requirements',
+      details: 'Liftgate Delivery, Dock-to-Dock, Inside Delivery, or Temperature Specifications',
+    },
+  ];
+
+  return (
+    <section id="quote" className="py-20 lg:py-28 bg-[#0B1F33] text-white scroll-mt-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          {/* Left Column: Headline and Overview */}
+          <div className="lg:col-span-6">
+            <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#F57C00] mb-3">
+              <span className="w-6 h-0.5 bg-[#F57C00]" />
+              <span>Request a Quote</span>
+            </div>
+
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight mb-5">
+              Get a Fast & Competitive Freight Quote
+            </h2>
+
+            <p className="text-base text-slate-300 leading-relaxed mb-6">
+              CK Transports provides upfront, transparent freight rates for commercial shippers, manufacturers, and distributors across the United States. Simply contact our dispatch office with your lane requirements for an immediate rate assessment.
+            </p>
+
+            <div className="space-y-4 mb-8 text-xs text-slate-300">
+              <div className="flex items-start gap-3 p-4 rounded-xl bg-[#071521] border border-slate-800">
+                <CheckCircle2 className="w-5 h-5 text-[#F57C00] shrink-0 mt-0.5" />
+                <div>
+                  <p className="font-bold text-white text-sm">Transparent All-In Pricing</p>
+                  <p className="text-slate-400 mt-1">
+                    No hidden fuel surcharges or surprise billing. Complete lane transparency based on current national freight indexes.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3 p-4 rounded-xl bg-[#071521] border border-slate-800">
+                <CheckCircle2 className="w-5 h-5 text-[#F57C00] shrink-0 mt-0.5" />
+                <div>
+                  <p className="font-bold text-white text-sm">Immediate Dispatch Confirmation</p>
+                  <p className="text-slate-400 mt-1">
+                    Dedicated account managers review and confirm equipment availability within 15 to 30 minutes during standard business hours.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3 p-4 rounded-xl bg-[#071521] border border-slate-800">
+                <CheckCircle2 className="w-5 h-5 text-[#F57C00] shrink-0 mt-0.5" />
+                <div>
+                  <p className="font-bold text-white text-sm">Comprehensive Cargo Coverage</p>
+                  <p className="text-slate-400 mt-1">
+                    $250,000 standard cargo insurance included on every commercial dispatch with option for declared high-value riders.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Direct Contact Action Box */}
+            <div className="p-6 rounded-xl bg-gradient-to-r from-[#102A45] to-[#0a1b2d] border border-slate-700/80 shadow-lg">
+              <p className="text-xs uppercase tracking-wider text-[#F57C00] font-bold">
+                Direct Dispatch Hotline
+              </p>
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mt-2">
+                <div>
+                  <a
+                    href="tel:+18565550123"
+                    className="text-2xl font-black text-white hover:text-[#F57C00] transition-colors"
+                  >
+                    +1 (856) 555-0123
+                  </a>
+                  <p className="text-xs text-slate-400 mt-0.5">
+                    Mon - Fri: 8:00 AM - 6:00 PM EST
+                  </p>
+                </div>
+
+                <a
+                  href="mailto:dispatch@cktransports.com?subject=Freight%20Quote%20Request"
+                  className="px-6 py-3 bg-[#F57C00] hover:bg-[#E65100] text-white font-bold text-xs uppercase tracking-wider rounded-lg transition-all flex items-center justify-center gap-2 shadow-md cursor-pointer shrink-0"
+                >
+                  <Mail className="w-4 h-4" />
+                  <span>Email Details</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Column: Required Information Checklist (Plain Display) */}
+          <div className="lg:col-span-6 bg-[#071521] border border-slate-700/80 rounded-2xl p-6 sm:p-8 shadow-2xl">
+            <div className="border-b border-slate-800 pb-4 mb-6">
+              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#F57C00] mb-1">
+                <FileText className="w-4 h-4" />
+                <span>Information Checklist</span>
+              </div>
+              <h3 className="text-xl font-bold text-white">
+                Information to Include for Your Quote
+              </h3>
+              <p className="text-xs text-slate-400 mt-1">
+                When calling or emailing our team, please have the following details ready for an accurate rate confirmation:
+              </p>
+            </div>
+
+            <div className="divide-y divide-slate-800/80 text-xs">
+              {quoteChecklist.map((item, idx) => (
+                <div key={idx} className="py-3.5 flex items-start gap-3">
+                  <div className="w-6 h-6 rounded bg-[#102A45] border border-slate-700 text-[#F57C00] flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">
+                    {idx + 1}
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-white text-sm">{item.title}</h4>
+                    <p className="text-slate-400 mt-0.5">{item.details}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Quick Summary Card */}
+            <div className="mt-6 p-4 rounded-xl bg-[#0B1F33] border border-slate-700 text-xs">
+              <div className="flex items-start gap-3">
+                <MapPin className="w-4 h-4 text-[#F57C00] shrink-0 mt-0.5" />
+                <div>
+                  <p className="font-bold text-white">Corporate Terminal Location</p>
+                  <p className="text-slate-300 mt-0.5">
+                    CK Transports · 308 Evergreen Forest Blvd, Avenel, NJ 07001
+                  </p>
+                  <p className="text-slate-400 text-[11px] mt-1">
+                    Centrally located in Northern New Jersey with direct interstate access to I-95, I-287, and major East Coast distribution corridors.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
