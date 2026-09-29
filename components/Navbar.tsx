@@ -24,7 +24,7 @@ export default function Navbar() {
           <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 text-slate-300">
             <div className="flex items-center gap-1.5 hover:text-white transition-colors">
               <MapPin className="w-3.5 h-3.5 text-[#F57C00] shrink-0" />
-              <span>308 Evergreen Forest Blvd, Avenel, NJ 07001</span>
+              <span>Lincoln Hwy #3, Kearny, NJ 07032</span>
             </div>
             <span className="hidden lg:inline text-slate-600">|</span>
             <span className="hidden lg:inline text-slate-400">
@@ -40,11 +40,11 @@ export default function Navbar() {
             </div>
             <span className="hidden sm:inline text-slate-600">|</span>
             <a
-              href="tel:+18565550123"
+              href="tel:+19732007886"
               className="flex items-center gap-1.5 font-semibold text-white hover:text-[#F57C00] transition-colors"
             >
               <Phone className="w-3.5 h-3.5 text-[#F57C00] shrink-0" />
-              <span>+1 (856) 555-0123</span>
+              <span>973-200-7886</span>
             </a>
           </div>
         </div>
@@ -231,8 +231,8 @@ export default function Navbar() {
             </a>
             <div className="text-center text-xs text-slate-400 py-1 flex items-center justify-center gap-2">
               <Phone className="w-3.5 h-3.5 text-[#F57C00]" />
-              <a href="tel:+18565550123" className="hover:text-white">
-                +1 (856) 555-0123
+              <a href="tel:+19732007886" className="hover:text-white">
+                973-200-7886
               </a>
             </div>
           </div>

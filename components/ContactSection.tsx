@@ -47,15 +47,15 @@ export default function ContactSection() {
                   CK Transports
                 </p>
                 <p className="text-sm text-slate-600">
-                  308 Evergreen Forest Blvd
+                  Lincoln Hwy #3
                 </p>
                 <p className="text-sm text-slate-600">
-                  Avenel, NJ 07001, United States
+                  Kearny, NJ 07032, United States
                 </p>
               </div>
 
               <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
-                <span>Middlesex County</span>
+                <span>Hudson County</span>
                 <span className="text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded">
                   Operational Hub
                 </span>
@@ -73,10 +73,10 @@ export default function ContactSection() {
                 </h3>
                 <p className="text-2xl font-black text-slate-900 mt-2">
                   <a
-                    href="tel:+18565550123"
+                    href="tel:+19732007886"
                     className="hover:text-[#F57C00] transition-colors"
                   >
-                    +1 (856) 555-0123
+                    973-200-7886
                   </a>
                 </p>
                 <p className="text-xs text-slate-500 mt-2">
@@ -100,30 +100,12 @@ export default function ContactSection() {
                 </h3>
                 <div className="mt-3 space-y-2 text-xs">
                   <div>
-                    <span className="text-slate-400 block text-[10px] uppercase font-bold">General Information:</span>
+                    <span className="text-slate-400 block text-[10px] uppercase font-bold">General, Dispatch & Billing:</span>
                     <a
-                      href="mailto:info@cktransports.com"
+                      href="mailto:ckbilling.us@gmail.com"
                       className="font-bold text-slate-800 hover:text-[#F57C00] text-sm transition-colors"
                     >
-                      info@cktransports.com
-                    </a>
-                  </div>
-                  <div>
-                    <span className="text-slate-400 block text-[10px] uppercase font-bold">Freight Dispatch:</span>
-                    <a
-                      href="mailto:dispatch@cktransports.com"
-                      className="font-bold text-slate-800 hover:text-[#F57C00] text-sm transition-colors"
-                    >
-                      dispatch@cktransports.com
-                    </a>
-                  </div>
-                  <div>
-                    <span className="text-slate-400 block text-[10px] uppercase font-bold">Billing & Invoicing:</span>
-                    <a
-                      href="mailto:billing@cktransports.com"
-                      className="font-bold text-slate-800 hover:text-[#F57C00] text-sm transition-colors"
-                    >
-                      billing@cktransports.com
+                      ckbilling.us@gmail.com
                     </a>
                   </div>
                 </div>
@@ -200,18 +182,18 @@ export default function ContactSection() {
                 </div>
                 <div className="pt-2 flex justify-between items-center">
                   <span className="text-slate-400">Operating Base:</span>
-                  <span className="font-bold text-white">Avenel, New Jersey</span>
+                  <span className="font-bold text-white">Kearny, New Jersey</span>
                 </div>
               </div>
             </div>
 
             <div className="mt-8 pt-6 border-t border-slate-800">
               <a
-                href="tel:+18565550123"
+                href="tel:+19732007886"
                 className="w-full py-3.5 bg-[#F57C00] hover:bg-[#E65100] text-white font-bold text-xs uppercase tracking-wider rounded-lg transition-colors flex items-center justify-center gap-2 shadow-lg"
               >
                 <Phone className="w-4 h-4" />
-                <span>Call (856) 555-0123</span>
+                <span>Call 973-200-7886</span>
               </a>
             </div>
           </div>

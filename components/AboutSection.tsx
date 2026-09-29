@@ -35,7 +35,7 @@ export default function AboutSection() {
                   Corporate Terminal & Hub
                 </p>
                 <p className="text-lg font-bold">
-                  308 Evergreen Forest Blvd, Avenel, NJ 07001
+                  Lincoln Hwy #3, Kearny, NJ 07032
                 </p>
               </div>
             </div>
@@ -72,7 +72,7 @@ export default function AboutSection() {
             </p>
 
             <p className="text-sm text-slate-600 leading-relaxed mb-8">
-              We work with businesses, distributors, manufacturers, and commercial customers to move freight safely and efficiently across the United States. Headquartered in Avenel, New Jersey, our operations center orchestrates continuous linehaul and regional routes with dedicated attention to cargo security, strict appointment compliance, and real-time communication.
+              We work with businesses, distributors, manufacturers, and commercial customers to move freight safely and efficiently across the United States. Headquartered in Kearny, New Jersey, our operations center orchestrates continuous linehaul and regional routes with dedicated attention to cargo security, strict appointment compliance, and real-time communication.
             </p>
 
             {/* Core Values 4-Grid */}

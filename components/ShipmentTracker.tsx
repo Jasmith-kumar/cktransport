@@ -22,7 +22,7 @@ export default function ShipmentTracker() {
     bolNumber: 'BOL-84920-A',
     status: 'IN_TRANSIT',
     statusLabel: 'In Transit · On Schedule',
-    origin: 'Avenel, NJ (Distribution Terminal)',
+    origin: 'Kearny, NJ (Distribution Terminal)',
     destination: 'Atlanta, GA (Industrial Gateway)',
     pickupDate: 'Sep 27, 2026 · 08:30 AM EST',
     estimatedDelivery: 'Sep 29, 2026 · 02:00 PM EST',
@@ -36,7 +36,7 @@ export default function ShipmentTracker() {
       {
         title: 'Dispatch Confirmed & Equipment Assigned',
         time: 'Sep 26, 2026 · 04:15 PM EST',
-        location: 'Avenel, NJ Dispatch Desk',
+        location: 'Kearny, NJ Dispatch Desk',
         completed: true,
       },
       {
@@ -48,7 +48,7 @@ export default function ShipmentTracker() {
       {
         title: 'Departed Regional Distribution Hub',
         time: 'Sep 27, 2026 · 11:30 AM EST',
-        location: 'Avenel, NJ Interstate Terminal',
+        location: 'Kearny, NJ Interstate Terminal',
         completed: true,
       },
       {
@@ -222,7 +222,7 @@ export default function ShipmentTracker() {
             </div>
             <div>
               <span className="text-slate-500 uppercase text-[10px] font-bold">Need Live Dispatch Support?</span>
-              <p className="text-[#F57C00] font-bold mt-0.5">+1 (856) 555-0123 (Option 1)</p>
+              <p className="text-[#F57C00] font-bold mt-0.5">973-200-7886 (Option 1)</p>
             </div>
           </div>
         </div>

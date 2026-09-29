@@ -104,10 +104,10 @@ export default function QuoteCalculator() {
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mt-2">
                 <div>
                   <a
-                    href="tel:+18565550123"
+                    href="tel:+19732007886"
                     className="text-2xl font-black text-white hover:text-[#F57C00] transition-colors"
                   >
-                    +1 (856) 555-0123
+                    973-200-7886
                   </a>
                   <p className="text-xs text-slate-400 mt-0.5">
                     Mon - Fri: 8:00 AM - 6:00 PM EST
@@ -115,7 +115,7 @@ export default function QuoteCalculator() {
                 </div>
 
                 <a
-                  href="mailto:dispatch@cktransports.com?subject=Freight%20Quote%20Request"
+                  href="mailto:ckbilling.us@gmail.com?subject=Freight%20Quote%20Request"
                   className="px-6 py-3 bg-[#F57C00] hover:bg-[#E65100] text-white font-bold text-xs uppercase tracking-wider rounded-lg transition-all flex items-center justify-center gap-2 shadow-md cursor-pointer shrink-0"
                 >
                   <Mail className="w-4 h-4" />
@@ -161,7 +161,7 @@ export default function QuoteCalculator() {
                 <div>
                   <p className="font-bold text-white">Corporate Terminal Location</p>
                   <p className="text-slate-300 mt-0.5">
-                    CK Transports · 308 Evergreen Forest Blvd, Avenel, NJ 07001
+                    CK Transports · Lincoln Hwy #3, Kearny, NJ 07032
                   </p>
                   <p className="text-slate-400 text-[11px] mt-1">
                     Centrally located in Northern New Jersey with direct interstate access to I-95, I-287, and major East Coast distribution corridors.

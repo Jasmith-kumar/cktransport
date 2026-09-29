@@ -57,11 +57,11 @@ export default function CtaBanner({ onOpenQuote }: CtaBannerProps) {
             </button>
 
             <a
-              href="tel:+18565550123"
+              href="tel:+19732007886"
               className="w-full sm:w-auto px-6 py-4 bg-slate-800/80 hover:bg-slate-700 text-white font-semibold text-xs uppercase tracking-wider rounded-lg border border-slate-600 transition-colors flex items-center justify-center gap-2"
             >
               <Phone className="w-4 h-4 text-[#F57C00]" />
-              <span>(856) 555-0123</span>
+              <span>973-200-7886</span>
             </a>
           </div>
         </div>

@@ -226,7 +226,7 @@ export default function AcceptOfferPortal({
                   </span>
                 </div>
                 <p className="text-xs text-slate-300 mt-1">
-                  308 Evergreen Forest Blvd, Avenel, NJ 07001 · DOT #3894211 · MC #1429810
+                  Lincoln Hwy #3, Kearny, NJ 07032 · DOT #3894211 · MC #1429810
                 </p>
               </div>
 
@@ -256,9 +256,9 @@ export default function AcceptOfferPortal({
                   Carrier Information
                 </p>
                 <p className="text-sm font-bold text-white">CK Transports LLC</p>
-                <p className="text-slate-300">308 Evergreen Forest Blvd, Avenel, NJ 07001</p>
-                <p className="text-slate-300">Dispatch: (856) 555-0123</p>
-                <p className="text-slate-300">Billing: billing@cktransports.com</p>
+                <p className="text-slate-300">Lincoln Hwy #3, Kearny, NJ 07032</p>
+                <p className="text-slate-300">Dispatch: 973-200-7886</p>
+                <p className="text-slate-300">Billing: ckbilling.us@gmail.com</p>
               </div>
             </div>
 
@@ -762,7 +762,7 @@ export default function AcceptOfferPortal({
               </div>
               <div className="py-2 flex justify-between">
                 <span className="text-slate-400">Merchant Operating Address:</span>
-                <span className="text-slate-300">308 Evergreen Forest Blvd, Avenel, NJ 07001</span>
+                <span className="text-slate-300">Lincoln Hwy #3, Kearny, NJ 07032</span>
               </div>
               <div className="pt-2 flex justify-between">
                 <span className="text-slate-400">Scheduled Pickup:</span>

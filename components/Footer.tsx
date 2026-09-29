@@ -53,19 +53,19 @@ export default function Footer({ onOpenPolicy }: FooterProps) {
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-[#F57C00] shrink-0 mt-0.5" />
                 <span className="text-slate-300">
-                  308 Evergreen Forest Blvd, Avenel, NJ 07001
+                  Lincoln Hwy #3, Kearny, NJ 07032
                 </span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-[#F57C00] shrink-0" />
-                <a href="tel:+18565550123" className="hover:text-white transition-colors">
-                  +1 (856) 555-0123
+                <a href="tel:+19732007886" className="hover:text-white transition-colors">
+                  973-200-7886
                 </a>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-[#F57C00] shrink-0" />
-                <a href="mailto:info@cktransports.com" className="hover:text-white transition-colors">
-                  info@cktransports.com
+                <a href="mailto:ckbilling.us@gmail.com" className="hover:text-white transition-colors">
+                  ckbilling.us@gmail.com
                 </a>
               </div>
             </div>
