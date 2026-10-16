@@ -22,7 +22,7 @@ export default function ShipmentTracker() {
     bolNumber: 'BOL-84920-A',
     status: 'IN_TRANSIT',
     statusLabel: 'In Transit · On Schedule',
-    origin: 'Kearny, NJ (Distribution Terminal)',
+    origin: 'Newark, NJ (Distribution Terminal)',
     destination: 'Atlanta, GA (Industrial Gateway)',
     pickupDate: 'Sep 27, 2026 · 08:30 AM EST',
     estimatedDelivery: 'Sep 29, 2026 · 02:00 PM EST',
@@ -36,7 +36,7 @@ export default function ShipmentTracker() {
       {
         title: 'Dispatch Confirmed & Equipment Assigned',
         time: 'Sep 26, 2026 · 04:15 PM EST',
-        location: 'Kearny, NJ Dispatch Desk',
+        location: 'Newark, NJ Dispatch Desk',
         completed: true,
       },
       {
@@ -48,7 +48,7 @@ export default function ShipmentTracker() {
       {
         title: 'Departed Regional Distribution Hub',
         time: 'Sep 27, 2026 · 11:30 AM EST',
-        location: 'Kearny, NJ Interstate Terminal',
+        location: 'Newark, NJ Interstate Terminal',
         completed: true,
       },
       {

@@ -53,7 +53,7 @@ export default function Footer({ onOpenPolicy }: FooterProps) {
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-[#F57C00] shrink-0 mt-0.5" />
                 <span className="text-slate-300">
-                  Lincoln Hwy #3, Kearny, NJ 07032
+                  2 Penn Plaza E, Newark, NJ 07105
                 </span>
               </div>
               <div className="flex items-center gap-2">
@@ -64,8 +64,8 @@ export default function Footer({ onOpenPolicy }: FooterProps) {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-[#F57C00] shrink-0" />
-                <a href="mailto:ckbilling.us@gmail.com" className="hover:text-white transition-colors">
-                  ckbilling.us@gmail.com
+                <a href="mailto:info@cktransports.us" className="hover:text-white transition-colors">
+                  info@cktransports.us
                 </a>
               </div>
             </div>
@@ -207,6 +207,11 @@ export default function Footer({ onOpenPolicy }: FooterProps) {
               Payment Terms
             </button>
           </div>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-5 text-center">
+          <p className="text-[11px] text-slate-500">
+            Affiliated to RRT IT Solutions and Timmareddy
+          </p>
         </div>
       </div>
     </footer>

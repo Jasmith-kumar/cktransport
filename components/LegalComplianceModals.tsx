@@ -41,7 +41,7 @@ export default function LegalComplianceModal({
             {activePolicy === 'payment' && 'Payment Gateway & Billing Terms'}
           </h2>
           <p className="text-xs text-slate-400 mt-1">
-            Effective Date: January 1, 2026 · Operating Address: Lincoln Hwy #3, Kearny, NJ 07032
+            Effective Date: January 1, 2026 · Operating Address: 2 Penn Plaza E, Newark, NJ 07105
           </p>
         </div>
 
@@ -140,7 +140,7 @@ export default function LegalComplianceModal({
               <div>
                 <h3 className="text-white font-bold mb-1">3. Cargo Claims & Resolution Process</h3>
                 <p>
-                  In the event of physical cargo damage or shortage, notice of intent to claim must be noted on the Bill of Lading (BOL) upon delivery. A formal written claim supported by photographs, original purchase invoices, and inspection reports must be submitted to ckbilling.us@gmail.com within nine (9) months of delivery in accordance with federal Carmack Amendment regulations. Claims are investigated and resolved within thirty (30) business days.
+                  In the event of physical cargo damage or shortage, notice of intent to claim must be noted on the Bill of Lading (BOL) upon delivery. A formal written claim supported by photographs, original purchase invoices, and inspection reports must be submitted to info@cktransports.us within nine (9) months of delivery in accordance with federal Carmack Amendment regulations. Claims are investigated and resolved within thirty (30) business days.
                 </p>
               </div>
 
@@ -180,7 +180,7 @@ export default function LegalComplianceModal({
               <div>
                 <h3 className="text-white font-bold mb-1">4. Invoice Inquiries & Billing Disputes</h3>
                 <p>
-                  If you identify an error on your rate confirmation or invoice, please contact our billing department immediately at <a href="mailto:ckbilling.us@gmail.com" className="text-[#F57C00] underline">ckbilling.us@gmail.com</a> or call 973-200-7886. Billing inquiries are reviewed and resolved by a designated controller within two (2) business days.
+                  If you identify an error on your rate confirmation or invoice, please contact our billing department immediately at <a href="mailto:info@cktransports.us" className="text-[#F57C00] underline">info@cktransports.us</a> or call 973-200-7886. Billing inquiries are reviewed and resolved by a designated controller within two (2) business days.
                 </p>
               </div>
             </>

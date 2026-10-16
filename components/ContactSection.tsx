@@ -6,12 +6,9 @@ import {
   Phone,
   Mail,
   Clock,
-  Building,
   ShieldCheck,
-  Globe,
-  FileCheck,
-  CheckCircle2,
 } from 'lucide-react';
+import ContactForm from './ContactForm';
 
 export default function ContactSection() {
   return (
@@ -27,123 +24,136 @@ export default function ContactSection() {
             Connect With CK Transports
           </h2>
           <p className="text-base text-slate-600 leading-relaxed">
-            Our corporate offices and dispatch desk are available Monday through Friday. Reach out directly by phone, email, or visit our New Jersey operational headquarters.
+            Our corporate offices and dispatch desk are available Monday through Friday. Reach out directly by phone, email, or the form below — every inquiry goes to info@cktransports.us.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-          {/* Main 4 Contact Cards */}
-          <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {/* Headquarters Card */}
-            <div className="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
-              <div>
-                <div className="p-3.5 rounded-xl bg-[#0B1F33] text-[#F57C00] w-fit mb-4">
-                  <MapPin className="w-6 h-6" />
+          {/* Contact details + form */}
+          <div className="lg:col-span-8 space-y-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {/* Headquarters Card */}
+              <div className="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+                <div>
+                  <div className="p-3.5 rounded-xl bg-[#0B1F33] text-[#F57C00] w-fit mb-4">
+                    <MapPin className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-lg font-bold text-[#0B1F33]">
+                    Corporate Address
+                  </h3>
+                  <p className="text-sm font-semibold text-slate-800 mt-2">
+                    CK Transports
+                  </p>
+                  <p className="text-sm text-slate-600">
+                    2 Penn Plaza E
+                  </p>
+                  <p className="text-sm text-slate-600">
+                    Newark, NJ 07105, United States
+                  </p>
                 </div>
-                <h3 className="text-lg font-bold text-[#0B1F33]">
-                  Corporate Address
-                </h3>
-                <p className="text-sm font-semibold text-slate-800 mt-2">
-                  CK Transports
-                </p>
-                <p className="text-sm text-slate-600">
-                  Lincoln Hwy #3
-                </p>
-                <p className="text-sm text-slate-600">
-                  Kearny, NJ 07032, United States
-                </p>
-              </div>
 
-              <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
-                <span>Hudson County</span>
-                <span className="text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded">
-                  Operational Hub
-                </span>
-              </div>
-            </div>
-
-            {/* Direct Telephone Card */}
-            <div className="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
-              <div>
-                <div className="p-3.5 rounded-xl bg-[#0B1F33] text-[#F57C00] w-fit mb-4">
-                  <Phone className="w-6 h-6" />
+                <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                  <span>Essex County</span>
+                  <span className="text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded">
+                    Operational Hub
+                  </span>
                 </div>
-                <h3 className="text-lg font-bold text-[#0B1F33]">
-                  Telephone & Dispatch
-                </h3>
-                <p className="text-2xl font-black text-slate-900 mt-2">
-                  <a
-                    href="tel:+19732007886"
-                    className="hover:text-[#F57C00] transition-colors"
-                  >
-                    973-200-7886
-                  </a>
-                </p>
-                <p className="text-xs text-slate-500 mt-2">
-                  Direct Line to Live Freight Dispatch & Operations
-                </p>
               </div>
 
-              <div className="mt-6 pt-4 border-t border-slate-100 text-xs text-slate-500">
-                <span>Immediate phone response during operating hours</span>
-              </div>
-            </div>
-
-            {/* Direct Email Card */}
-            <div className="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
-              <div>
-                <div className="p-3.5 rounded-xl bg-[#0B1F33] text-[#F57C00] w-fit mb-4">
-                  <Mail className="w-6 h-6" />
-                </div>
-                <h3 className="text-lg font-bold text-[#0B1F33]">
-                  Email Inquiries
-                </h3>
-                <div className="mt-3 space-y-2 text-xs">
-                  <div>
-                    <span className="text-slate-400 block text-[10px] uppercase font-bold">General, Dispatch & Billing:</span>
+              {/* Direct Telephone Card */}
+              <div className="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+                <div>
+                  <div className="p-3.5 rounded-xl bg-[#0B1F33] text-[#F57C00] w-fit mb-4">
+                    <Phone className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-lg font-bold text-[#0B1F33]">
+                    Telephone & Dispatch
+                  </h3>
+                  <p className="text-2xl font-black text-slate-900 mt-2">
                     <a
-                      href="mailto:ckbilling.us@gmail.com"
-                      className="font-bold text-slate-800 hover:text-[#F57C00] text-sm transition-colors"
+                      href="tel:+19732007886"
+                      className="hover:text-[#F57C00] transition-colors"
                     >
-                      ckbilling.us@gmail.com
+                      973-200-7886
                     </a>
-                  </div>
+                  </p>
+                  <p className="text-xs text-slate-500 mt-2">
+                    Direct Line to Live Freight Dispatch & Operations
+                  </p>
+                </div>
+
+                <div className="mt-6 pt-4 border-t border-slate-100 text-xs text-slate-500">
+                  <span>Immediate phone response during operating hours</span>
                 </div>
               </div>
 
-              <div className="mt-6 pt-4 border-t border-slate-100 text-xs text-slate-500">
-                <span>Responses delivered within 1 business hour</span>
+              {/* Direct Email Card */}
+              <div className="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+                <div>
+                  <div className="p-3.5 rounded-xl bg-[#0B1F33] text-[#F57C00] w-fit mb-4">
+                    <Mail className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-lg font-bold text-[#0B1F33]">
+                    Email Inquiries
+                  </h3>
+                  <div className="mt-3 space-y-2 text-xs">
+                    <div>
+                      <span className="text-slate-400 block text-[10px] uppercase font-bold">General, Dispatch & Billing:</span>
+                      <a
+                        href="mailto:info@cktransports.us"
+                        className="font-bold text-slate-800 hover:text-[#F57C00] text-sm transition-colors"
+                      >
+                        info@cktransports.us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-6 pt-4 border-t border-slate-100 text-xs text-slate-500">
+                  <span>Responses delivered within 1 business hour</span>
+                </div>
+              </div>
+
+              {/* Business Hours Card */}
+              <div className="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+                <div>
+                  <div className="p-3.5 rounded-xl bg-[#0B1F33] text-[#F57C00] w-fit mb-4">
+                    <Clock className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-lg font-bold text-[#0B1F33]">
+                    Operating Schedule
+                  </h3>
+                  <div className="mt-3 space-y-2 text-xs">
+                    <div className="flex justify-between">
+                      <span className="text-slate-600 font-medium">Monday - Friday:</span>
+                      <span className="font-bold text-slate-900">8:00 AM - 6:00 PM EST</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-slate-600 font-medium">Saturday:</span>
+                      <span className="font-bold text-slate-900">9:00 AM - 1:00 PM EST</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-slate-600 font-medium">Sunday:</span>
+                      <span className="text-slate-500">Closed (On-Call Dispatch)</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-6 pt-4 border-t border-slate-100 text-xs text-slate-500">
+                  <span>24/7 emergency dispatch coverage for loads in transit</span>
+                </div>
               </div>
             </div>
 
-            {/* Business Hours Card */}
-            <div className="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
-              <div>
-                <div className="p-3.5 rounded-xl bg-[#0B1F33] text-[#F57C00] w-fit mb-4">
-                  <Clock className="w-6 h-6" />
-                </div>
-                <h3 className="text-lg font-bold text-[#0B1F33]">
-                  Operating Schedule
-                </h3>
-                <div className="mt-3 space-y-2 text-xs">
-                  <div className="flex justify-between">
-                    <span className="text-slate-600 font-medium">Monday - Friday:</span>
-                    <span className="font-bold text-slate-900">8:00 AM - 6:00 PM EST</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-slate-600 font-medium">Saturday:</span>
-                    <span className="font-bold text-slate-900">9:00 AM - 1:00 PM EST</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-slate-600 font-medium">Sunday:</span>
-                    <span className="text-slate-500">Closed (On-Call Dispatch)</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-6 pt-4 border-t border-slate-100 text-xs text-slate-500">
-                <span>24/7 emergency dispatch coverage for loads in transit</span>
-              </div>
+            {/* Contact form */}
+            <div className="bg-white p-7 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
+              <h3 className="text-xl font-bold text-[#0B1F33] mb-1">
+                Send Us a Message
+              </h3>
+              <p className="text-sm text-slate-600 mb-6">
+                Fill out the form and we&apos;ll reply to your email. Email is required.
+              </p>
+              <ContactForm formType="contact" variant="light" />
             </div>
           </div>
 
@@ -182,7 +192,7 @@ export default function ContactSection() {
                 </div>
                 <div className="pt-2 flex justify-between items-center">
                   <span className="text-slate-400">Operating Base:</span>
-                  <span className="font-bold text-white">Kearny, New Jersey</span>
+                  <span className="font-bold text-white">Newark, New Jersey</span>
                 </div>
               </div>
             </div>

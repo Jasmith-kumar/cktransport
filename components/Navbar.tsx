@@ -24,7 +24,7 @@ export default function Navbar() {
           <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 text-slate-300">
             <div className="flex items-center gap-1.5 hover:text-white transition-colors">
               <MapPin className="w-3.5 h-3.5 text-[#F57C00] shrink-0" />
-              <span>Lincoln Hwy #3, Kearny, NJ 07032</span>
+              <span>2 Penn Plaza E, Newark, NJ 07105</span>
             </div>
             <span className="hidden lg:inline text-slate-600">|</span>
             <span className="hidden lg:inline text-slate-400">

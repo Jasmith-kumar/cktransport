@@ -226,7 +226,7 @@ export default function AcceptOfferPortal({
                   </span>
                 </div>
                 <p className="text-xs text-slate-300 mt-1">
-                  Lincoln Hwy #3, Kearny, NJ 07032 · DOT #3894211 · MC #1429810
+                  2 Penn Plaza E, Newark, NJ 07105 · DOT #3894211 · MC #1429810
                 </p>
               </div>
 
@@ -256,9 +256,9 @@ export default function AcceptOfferPortal({
                   Carrier Information
                 </p>
                 <p className="text-sm font-bold text-white">CK Transports LLC</p>
-                <p className="text-slate-300">Lincoln Hwy #3, Kearny, NJ 07032</p>
+                <p className="text-slate-300">2 Penn Plaza E, Newark, NJ 07105</p>
                 <p className="text-slate-300">Dispatch: 973-200-7886</p>
-                <p className="text-slate-300">Billing: ckbilling.us@gmail.com</p>
+                <p className="text-slate-300">Billing: info@cktransports.us</p>
               </div>
             </div>
 
@@ -762,7 +762,7 @@ export default function AcceptOfferPortal({
               </div>
               <div className="py-2 flex justify-between">
                 <span className="text-slate-400">Merchant Operating Address:</span>
-                <span className="text-slate-300">Lincoln Hwy #3, Kearny, NJ 07032</span>
+                <span className="text-slate-300">2 Penn Plaza E, Newark, NJ 07105</span>
               </div>
               <div className="pt-2 flex justify-between">
                 <span className="text-slate-400">Scheduled Pickup:</span>

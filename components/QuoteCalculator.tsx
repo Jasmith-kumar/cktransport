@@ -3,21 +3,17 @@
 import React from 'react';
 import {
   FileText,
-  Phone,
   Mail,
   MapPin,
-  Clock,
   CheckCircle2,
-  Truck,
-  ArrowRight,
-  ShieldCheck,
 } from 'lucide-react';
+import ContactForm from './ContactForm';
 
 export default function QuoteCalculator() {
   const quoteChecklist = [
     {
       title: 'Contact Details',
-      details: 'Full Name, Company Name, Direct Telephone & Business Email',
+      details: 'Full Name, Company Name, Direct Telephone & Business Email (required)',
     },
     {
       title: 'Pickup Location',
@@ -61,7 +57,7 @@ export default function QuoteCalculator() {
             </h2>
 
             <p className="text-base text-slate-300 leading-relaxed mb-6">
-              CK Transports provides upfront, transparent freight rates for commercial shippers, manufacturers, and distributors across the United States. Simply contact our dispatch office with your lane requirements for an immediate rate assessment.
+              CK Transports provides upfront, transparent freight rates for commercial shippers, manufacturers, and distributors across the United States. Submit the form and we&apos;ll send your request to info@cktransports.us.
             </p>
 
             <div className="space-y-4 mb-8 text-xs text-slate-300">
@@ -115,7 +111,7 @@ export default function QuoteCalculator() {
                 </div>
 
                 <a
-                  href="mailto:ckbilling.us@gmail.com?subject=Freight%20Quote%20Request"
+                  href="mailto:info@cktransports.us?subject=Freight%20Quote%20Request"
                   className="px-6 py-3 bg-[#F57C00] hover:bg-[#E65100] text-white font-bold text-xs uppercase tracking-wider rounded-lg transition-all flex items-center justify-center gap-2 shadow-md cursor-pointer shrink-0"
                 >
                   <Mail className="w-4 h-4" />
@@ -123,52 +119,63 @@ export default function QuoteCalculator() {
                 </a>
               </div>
             </div>
+
+            {/* Checklist */}
+            <div className="mt-8 bg-[#071521] border border-slate-700/80 rounded-2xl p-6 shadow-xl">
+              <div className="border-b border-slate-800 pb-4 mb-4">
+                <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#F57C00] mb-1">
+                  <FileText className="w-4 h-4" />
+                  <span>Information Checklist</span>
+                </div>
+                <h3 className="text-lg font-bold text-white">
+                  Details to Include in Your Message
+                </h3>
+              </div>
+
+              <div className="divide-y divide-slate-800/80 text-xs">
+                {quoteChecklist.map((item, idx) => (
+                  <div key={idx} className="py-3 flex items-start gap-3">
+                    <div className="w-6 h-6 rounded bg-[#102A45] border border-slate-700 text-[#F57C00] flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">
+                      {idx + 1}
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-white text-sm">{item.title}</h4>
+                      <p className="text-slate-400 mt-0.5">{item.details}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-4 p-4 rounded-xl bg-[#0B1F33] border border-slate-700 text-xs">
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-4 h-4 text-[#F57C00] shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-bold text-white">Corporate Terminal Location</p>
+                    <p className="text-slate-300 mt-0.5">
+                      CK Transports · 2 Penn Plaza E, Newark, NJ 07105
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          {/* Right Column: Required Information Checklist (Plain Display) */}
+          {/* Right Column: Quote request form */}
           <div className="lg:col-span-6 bg-[#071521] border border-slate-700/80 rounded-2xl p-6 sm:p-8 shadow-2xl">
             <div className="border-b border-slate-800 pb-4 mb-6">
               <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#F57C00] mb-1">
-                <FileText className="w-4 h-4" />
-                <span>Information Checklist</span>
+                <Mail className="w-4 h-4" />
+                <span>Online Quote Request</span>
               </div>
               <h3 className="text-xl font-bold text-white">
-                Information to Include for Your Quote
+                Submit Your Freight Details
               </h3>
               <p className="text-xs text-slate-400 mt-1">
-                When calling or emailing our team, please have the following details ready for an accurate rate confirmation:
+                Email is required. You&apos;ll receive an automatic thank-you confirmation after submitting.
               </p>
             </div>
 
-            <div className="divide-y divide-slate-800/80 text-xs">
-              {quoteChecklist.map((item, idx) => (
-                <div key={idx} className="py-3.5 flex items-start gap-3">
-                  <div className="w-6 h-6 rounded bg-[#102A45] border border-slate-700 text-[#F57C00] flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">
-                    {idx + 1}
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-white text-sm">{item.title}</h4>
-                    <p className="text-slate-400 mt-0.5">{item.details}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* Quick Summary Card */}
-            <div className="mt-6 p-4 rounded-xl bg-[#0B1F33] border border-slate-700 text-xs">
-              <div className="flex items-start gap-3">
-                <MapPin className="w-4 h-4 text-[#F57C00] shrink-0 mt-0.5" />
-                <div>
-                  <p className="font-bold text-white">Corporate Terminal Location</p>
-                  <p className="text-slate-300 mt-0.5">
-                    CK Transports · Lincoln Hwy #3, Kearny, NJ 07032
-                  </p>
-                  <p className="text-slate-400 text-[11px] mt-1">
-                    Centrally located in Northern New Jersey with direct interstate access to I-95, I-287, and major East Coast distribution corridors.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <ContactForm formType="quote" variant="dark" />
           </div>
         </div>
       </div>

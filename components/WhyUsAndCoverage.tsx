@@ -58,7 +58,7 @@ const REGIONS = [
   {
     name: 'Northeast',
     states: 'NJ, NY, PA, CT, MA, ME, NH, VT, RI',
-    hub: 'Kearny, NJ (HQ)',
+    hub: 'Newark, NJ (HQ)',
     turnaround: 'Next-Day Delivery',
     color: '#F57C00',
   },
@@ -206,7 +206,7 @@ export default function WhyUsAndCoverage() {
                     className="transition-colors duration-300"
                   />
 
-                  {/* Route lines radiating from Kearny, NJ Headquarters (Approx pos 520, 110) */}
+                  {/* Route lines radiating from Newark, NJ Headquarters (Approx pos 520, 110) */}
                   {/* To Atlanta Southeast (460, 230) */}
                   <path
                     d="M 520 110 Q 490 170 460 220"
@@ -249,7 +249,7 @@ export default function WhyUsAndCoverage() {
                   <circle cx="520" cy="110" r="7" fill="#F57C00" className="animate-pulse" />
                   <circle cx="520" cy="110" r="14" stroke="#F57C00" strokeWidth="1.5" opacity="0.6" />
                   <text x="500" y="95" fill="#FFFFFF" fontSize="10" fontWeight="bold">
-                    NJ HQ (Kearny)
+                    NJ HQ (Newark)
                   </text>
 
                   {/* Other Hub Nodes */}
