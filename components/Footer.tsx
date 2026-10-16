@@ -210,7 +210,7 @@ export default function Footer({ onOpenPolicy }: FooterProps) {
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-5 text-center">
           <p className="text-[11px] text-slate-500">
-            Affiliated to RRT IT Solutions and Timmareddy
+            Affiliated to Chandrakanth Kushwaha
           </p>
         </div>
       </div>
