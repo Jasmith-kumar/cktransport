@@ -259,6 +259,7 @@ export default function AcceptOfferPortal({
                 <p className="text-slate-300">2 Penn Plaza E, Newark, NJ 07105</p>
                 <p className="text-slate-300">Dispatch: 973-200-7886</p>
                 <p className="text-slate-300">Billing: info@cktransports.us</p>
+                <p className="text-slate-300">Billing: ckbilling.us@gmail.com</p>
               </div>
             </div>
 

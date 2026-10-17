@@ -57,7 +57,7 @@ export default function QuoteCalculator() {
             </h2>
 
             <p className="text-base text-slate-300 leading-relaxed mb-6">
-              CK Transports provides upfront, transparent freight rates for commercial shippers, manufacturers, and distributors across the United States. Submit the form and we&apos;ll send your request to info@cktransports.us.
+              CK Transports provides upfront, transparent freight rates for commercial shippers, manufacturers, and distributors across the United States. Submit the form and we&apos;ll send your request to info@cktransports.us and ckbilling.us@gmail.com.
             </p>
 
             <div className="space-y-4 mb-8 text-xs text-slate-300">
@@ -110,13 +110,22 @@ export default function QuoteCalculator() {
                   </p>
                 </div>
 
-                <a
-                  href="mailto:info@cktransports.us?subject=Freight%20Quote%20Request"
-                  className="px-6 py-3 bg-[#F57C00] hover:bg-[#E65100] text-white font-bold text-xs uppercase tracking-wider rounded-lg transition-all flex items-center justify-center gap-2 shadow-md cursor-pointer shrink-0"
-                >
-                  <Mail className="w-4 h-4" />
-                  <span>Email Details</span>
-                </a>
+                <div className="flex flex-col sm:flex-row gap-2 shrink-0">
+                  <a
+                    href="mailto:info@cktransports.us?subject=Freight%20Quote%20Request"
+                    className="px-6 py-3 bg-[#F57C00] hover:bg-[#E65100] text-white font-bold text-xs uppercase tracking-wider rounded-lg transition-all flex items-center justify-center gap-2 shadow-md cursor-pointer"
+                  >
+                    <Mail className="w-4 h-4" />
+                    <span>info@cktransports.us</span>
+                  </a>
+                  <a
+                    href="mailto:ckbilling.us@gmail.com?subject=Freight%20Quote%20Request"
+                    className="px-6 py-3 bg-[#F57C00] hover:bg-[#E65100] text-white font-bold text-xs uppercase tracking-wider rounded-lg transition-all flex items-center justify-center gap-2 shadow-md cursor-pointer"
+                  >
+                    <Mail className="w-4 h-4" />
+                    <span>ckbilling.us@gmail.com</span>
+                  </a>
+                </div>
               </div>
             </div>
 

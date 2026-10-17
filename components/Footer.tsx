@@ -62,11 +62,16 @@ export default function Footer({ onOpenPolicy }: FooterProps) {
                   973-200-7886
                 </a>
               </div>
-              <div className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-[#F57C00] shrink-0" />
-                <a href="mailto:info@cktransports.us" className="hover:text-white transition-colors">
-                  info@cktransports.us
-                </a>
+              <div className="flex items-start gap-2">
+                <Mail className="w-4 h-4 text-[#F57C00] shrink-0 mt-0.5" />
+                <div className="flex flex-col gap-1">
+                  <a href="mailto:info@cktransports.us" className="hover:text-white transition-colors">
+                    info@cktransports.us
+                  </a>
+                  <a href="mailto:ckbilling.us@gmail.com" className="hover:text-white transition-colors">
+                    ckbilling.us@gmail.com
+                  </a>
+                </div>
               </div>
             </div>
           </div>

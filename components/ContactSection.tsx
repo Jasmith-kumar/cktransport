@@ -24,7 +24,7 @@ export default function ContactSection() {
             Connect With CK Transports
           </h2>
           <p className="text-base text-slate-600 leading-relaxed">
-            Our corporate offices and dispatch desk are available Monday through Friday. Reach out directly by phone, email, or the form below — every inquiry goes to info@cktransports.us.
+            Our corporate offices and dispatch desk are available Monday through Friday. Reach out directly by phone, email, or the form below — every inquiry goes to info@cktransports.us and ckbilling.us@gmail.com.
           </p>
         </div>
 
@@ -96,14 +96,23 @@ export default function ContactSection() {
                   <h3 className="text-lg font-bold text-[#0B1F33]">
                     Email Inquiries
                   </h3>
-                  <div className="mt-3 space-y-2 text-xs">
+                  <div className="mt-3 space-y-3 text-xs">
                     <div>
-                      <span className="text-slate-400 block text-[10px] uppercase font-bold">General, Dispatch & Billing:</span>
+                      <span className="text-slate-400 block text-[10px] uppercase font-bold">General & Dispatch:</span>
                       <a
                         href="mailto:info@cktransports.us"
                         className="font-bold text-slate-800 hover:text-[#F57C00] text-sm transition-colors"
                       >
                         info@cktransports.us
+                      </a>
+                    </div>
+                    <div>
+                      <span className="text-slate-400 block text-[10px] uppercase font-bold">Billing:</span>
+                      <a
+                        href="mailto:ckbilling.us@gmail.com"
+                        className="font-bold text-slate-800 hover:text-[#F57C00] text-sm transition-colors"
+                      >
+                        ckbilling.us@gmail.com
                       </a>
                     </div>
                   </div>

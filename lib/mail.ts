@@ -97,6 +97,7 @@ export async function sendContactEmails(payload: ContactPayload) {
       'CK Transports',
       '2 Penn Plaza E, Newark, NJ 07105',
       'info@cktransports.us',
+      'ckbilling.us@gmail.com',
       '973-200-7886',
     ].join('\n'),
     html: `
@@ -110,6 +111,7 @@ export async function sendContactEmails(payload: ContactPayload) {
           <strong>CK Transports</strong><br />
           2 Penn Plaza E, Newark, NJ 07105<br />
           <a href="mailto:info@cktransports.us">info@cktransports.us</a><br />
+          <a href="mailto:ckbilling.us@gmail.com">ckbilling.us@gmail.com</a><br />
           973-200-7886
         </p>
       </div>
